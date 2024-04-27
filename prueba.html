@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color:#fff;
+        }
+        header {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .peli {
+            margin-bottom: 20px;
+            border: 1px solid #666;
+            border-radius: 5px;
+            width: 300px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgb(0, 0, 0, 0.3);
+            background-color: #333;
+        }
+        .peli img {
+            width: 100%;
+            height: 90%;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer; /*para indicar que la imagen es clickable*/
+        }
+        .peli h2 {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            text-align: center; /*centra el titulo de la peli*/
+        }
+        .buscador {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .buscador input[type=text] {
+            padding: 5px;
+            width: 30%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+        .buscador input[type=submit] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        .buscador input[type=submit]:hover {
+            background-color: #555;
+        }
+        .nueva-fila {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Películas</h1>
+        <div class="buscador">
+            <input type="text" placeholder="Buscar películas...">
+            <input type="submit" value="Buscar">
+        </div>
+    </header>
+    <main>
+        <div class="peli">
+            <a href="https://youtu.be/0IOsk2Vlc4o?si=ytX_LGlNJQPKXZwF" target="_blank">
+                <img src="img/bullet_train.jpg" alt="Bullet_Train">
+            </a>
+            <h2>Bullet Train</h2>
+        </div>
+        <div class="peli">
+            <a href="https://youtu.be/egIxeoEKpMc?si=_orQMQ8JyyoGpqnV" target="_blank">
+                <img src="img/Sobrevivientes.jpg" alt="Sobrevivientes_Despues_del_terremoto">
+            </a>
+            <h2>Sobrevivientes<br>Despues del terremoto</h2>
+        </div>
+        <div class="peli">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <img src="img/John_Wick_4.jpg" alt="John_Wick_4">
+            </a>
+            <h2>John Wick 4</h2>
+        </div>
+        
+    </main>
+   
+    <div class="nueva-fila">
+       
+        <div class="peli">
+            <a href="#">
+                <img src="img/rec.jpg" alt="Rec">
+            </a>
+            <h2>[🔴Rec]</h2>
+        </div>
+        <div class="peli">
+            <a href="#">
+                <img src="img/Hot_Fuzz.jpg" alt="Hot_Fuzz">
+            </a>
+            <h2>Hot Fuzz</h2>
+        </div>
+        <div class="peli">
+            <a href="#">
+                <img src="img/Muchachos.jpg" alt="Muchachos">
+            </a>
+            <h2>Muchachos</h2>
+        </div>
+    </div>
+
+    <div class="nueva-fila">
+       
+        <div class="peli">
+            <a href="#">
+                <img src="img/El_viaje_de_Chihiro.jpg" alt="El_viaje_de_Chihiro">
+            </a>
+            <h2>El viaje de Chihiro</h2>
+        </div>
+        <div class="peli">
+            <a href="#">
+                <img src="img/El_resplandor.jpg" alt="El_resplandor">
+            </a>
+            <h2>El Resplandor</h2>
+        </div>
+        <div class="peli">
+            <a href="#">
+                <img src="img/Parasitos.jpg" alt="Parasitos">
+            </a>
+            <h2>Parasitos</h2>
+        </div>
+    </div>
+
+</body>
+</html>
